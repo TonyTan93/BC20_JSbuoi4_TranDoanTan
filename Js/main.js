@@ -6,18 +6,18 @@ function soSanh (){
     var soThuHai = document.getElementById("soThuHai").value;
     var soThuBa = document.getElementById("soThuBa").value;
 
-    if (soThuNhat < soThuHai && soThuHai <soThuBa) {
-        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuNhat + " < " + soThuHai +" < " + soThuBa;
-    } else if (soThuNhat < soThuBa && soThuBa <soThuHai) {
-        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuNhat + " < " + soThuBa +" < " + soThuHai;
-    } else if (soThuHai < soThuNhat && soThuNhat <soThuBa) {
-        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuHai + " < " + soThuNhat +" < " + soThuBa;
-    } else if (soThuHai < soThuBa && soThuBa <soThuNhat) {
-        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuHai + " < " + soThuBa +" < " + soThuNhat;
-    } else if (soThuBa < soThuNhat && soThuNhat <soThuHai) {
-        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuBa + " < " + soThuNhat +" < " + soThuHai;
+    if (soThuNhat <= soThuHai && soThuHai <=soThuBa) {
+        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuNhat + " , " + soThuHai +" , " + soThuBa;
+    } else if (soThuNhat <= soThuBa && soThuBa <=soThuHai) {
+        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuNhat + " , " + soThuBa +" , " + soThuHai;
+    } else if (soThuHai <= soThuNhat && soThuNhat <=soThuBa) {
+        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuHai + " , " + soThuNhat +" , " + soThuBa;
+    } else if (soThuHai <= soThuBa && soThuBa <=soThuNhat) {
+        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuHai + " , " + soThuBa +" , " + soThuNhat;
+    } else if (soThuBa <= soThuNhat && soThuNhat <=soThuHai) {
+        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuBa + " , " + soThuNhat +" , " + soThuHai;
     } else {
-        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuBa + " < " + soThuHai +" < " + soThuNhat;
+        document.getElementById("txtSoSanh").innerHTML = "Thứ tự tăng dần là: " + soThuBa + " , " + soThuHai +" , " + soThuNhat;
     }
 }
 document.getElementById("btnSoSanh").onclick = soSanh;
